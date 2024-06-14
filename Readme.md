@@ -2,7 +2,7 @@
 
 * Студент: [Даниил Топольский](https://up.htmlacademy.ru/htmlcss/40/user/586815).
 * Наставник: [Николай Шабалин](https://htmlacademy.ru/profile/id1057153).
-* Сайт:(https://topolskiidaniil.github.io/586815-sedona-40/).
+* Сайт: [Мой проект Седона](https://topolskiidaniil.github.io/586815-sedona-40/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
