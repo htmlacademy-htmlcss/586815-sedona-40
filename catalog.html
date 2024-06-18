@@ -11,8 +11,8 @@
       <a class="navigation-link" href="index.html" aria-current="page">
         <img class="logo-site" src="#" alt="Логотип сайта">
       </a>
-      <nav class="navigation navigation-left">
-        <ul class="navigation-list">
+      <nav class="navigation">
+        <ul class="navigation-list-left">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
@@ -23,9 +23,7 @@
             <a class="navigation-link  navigation-link-current" href="catalog.html" aria-current="page">Гостиницы</a>
           </li>
         </ul>
-      </nav>
-      <nav class="navigation navigation-right">
-        <ul class="navigation-list">
+        <ul class="navigation-list-right">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
@@ -115,7 +113,6 @@
               <input class="field" type="number" name="price-from" id="price-from" value="0" min="0" max="12000">
               <label for="price-to">до</label>
               <input class="field" type="number" name="price-to" id="price-to" value="9000" min="0" max="12000">
-              <!--<div id="error-message" style="color: red;"></div>предупреждение-->
             </fieldset>
             <button class="button" type="submit" id="submit-button">Применить</button>
             <button class="button-reset" type="reset">Сбросить</button>
@@ -158,10 +155,9 @@
             <p class="hotel-card-price">От 4000 ₽</p>
             <a class="show-more" href="#">Подробнее</a>
             <button class="favorites" type="button">В избранное</button>
-            <ul class="stars-list">
+            <div class="stars-list">
               <span class="visually-hidden">4 звезды</span>
-              <!--Уточнить про список звёзд-->
-            </ul>
+            </div>
             <p class="ruting-result">Рейтинг: 8,5</p>
           </li>
           <li class="hotels-item">
@@ -173,10 +169,9 @@
             <p class="hotel-card-price">От 5000 ₽</p>
             <a class="show-more" href="#">Подробнее</a>
             <button class="in-favorites" type="button">В избранном</button>
-            <ul class="stars-list">
+            <div class="stars-list">
               <span class="visually-hidden">4 звезды</span>
-              <!--Уточнить про список звёзд-->
-            </ul>
+            </div>
             <p class="ruting-result">Рейтинг: 9,2</p>
           </li>
           <li class="hotels-item">
@@ -188,18 +183,47 @@
             <p class="hotel-card-price">От 2500 ₽</p>
             <a class="show-more" href="#">Подробнее</a>
             <button class="favorites" type="button">В избранное</button>
-            <ul class="stars-list">
+            <div class="stars-list">
               <span class="visually-hidden">3 звезды</span>
-              <!--Уточнить про список звёзд-->
-            </ul>
+            </div>
             <p class="ruting-result">Рейтинг: 6,9</p>
           </li>
-          <!--Ещё один отель-->
+          <li class="hotels-item">
+            <a class="hotel-card" href="#">
+              <img class="hotel-card-image" src="#" alt="Гора на фоне звёздного неба">
+            </a>
+            <h3 class="hotel-card-title">GreenTree Inn</h3>
+            <p class="hotel-card-group">Гостиница</p>
+            <p class="hotel-card-price">От 1500 ₽</p>
+            <a class="show-more" href="#">Подробнее</a>
+            <button class="favorites" type="button">В избранное</button>
+            <div class="stars-list">
+              <span class="visually-hidden">2 звезды</span>
+            </div>
+            <p class="ruting-result">Рейтинг: 5,0</p>
+          </li>
         </ul>
-        <ul class="pagination"></ul>
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <span class="pagination-link">...</span>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">10</a>
+          </li>
+        </ul>
       </section>
-    </main>
-    <footer class="page-footer">
       <section class="subscription subscription-background">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
         <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -209,6 +233,8 @@
           <button class="button subscription-button" type="submit">Подписаться</button>
         </form>
       </section>
+    </main>
+    <footer class="page-footer">
       <ul class="social-list">
         <!--insert icons-->
         <li class="social-item">
@@ -232,7 +258,5 @@
         <img class="logo-developer" src="#" alt="Перейти на сайт разработчика HTML Academy">
       </a>
     </footer>
-    <!--<script src="script.js"></script>//для стоимости в фильтре-->
   </body>
-
 </html>
