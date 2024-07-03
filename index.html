@@ -11,10 +11,10 @@
     <div class="page-container">
     <header class="page-header">
       <a class="logo-link" href="index.html" aria-current="page">
-        <img class="logo-site" src="images/svg/logotype.svg" width="138" height="64" alt="Логотип сайта">
+        <img class="logo-site" src="images/svg/logotype.svg" width="138" height="70" alt="Логотип сайта">
       </a>
       <nav class="navigation">
-        <ul class="navigation-list-left">
+        <ul class="navigation-list-left navigation-list">
           <li class="navigation-item">
             <a class="navigation-link navigation-link-current" href="index.html" aria-current="page">Главная</a>
           </li>
@@ -25,19 +25,19 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list-right">
-          <li class="navigation-item-search">
+        <ul class="navigation-list-right navigation-list">
+          <li class="navigation-item-search navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="navigation-item-heart">
+          <li class="navigation-item-heart navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Отелей в избранном:</span>
               <span class="favorite-counter visually-hidden">12</span><!-- visually-hidden временно -->
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item-button navigation-item">
             <a class="navigation-link button" href="#">Хочу сюда!</a>
           </li>
         </ul>
@@ -45,7 +45,7 @@
     </header>
     <main class="main-container">
       <h1 class="visually-hidden">Седона</h1>
-      <section class="banner-index-background">
+      <section class="banner-index">
         <h2 class="visually-hidden">Приветствие</h2>
         <img class="hero" src="images/svg/welcome.svg" width="458" height="352"
           alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
@@ -55,9 +55,11 @@
         <p class="advantages-description">Рассмотрим причины, по которым Седона круче, чем
           Гранд-Каньон!</p>
         <ul class="advantages-list">
-          <li class="advantages-item">
+          <li class="advantages-item advantages-item-big">
+            <div class="advantages-content-item-big">
             <h3 class="advantages-item-title">Настоящий городок</h3>
             <p class="advantages-item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
             <img class="advantages-photo" src="images/content/photo-1.jpg" width="800" height="385" alt="Улица Седоны">
           </li>
           <li class="advantages-item advantages-item-square">
@@ -72,11 +74,13 @@
             <h3 class="advantages-item-title">Мало туристов</h3>
             <p class="advantages-item-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item advantages-item-big">
             <img class="advantages-photo" src="images/content/photo-2.jpg" width="800" height="385"
               alt="Фотография моста дьявола">
+              <div class="advantages-content-item-big">
             <h3 class="advantages-item-title">Там есть мост дьявола</h3>
             <p class="advantages-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          </div>
           </li>
         </ul>
       </section>
@@ -86,15 +90,15 @@
         <ul class="services-list">
           <li class="services-item services-item-home">
             <h3 class="services-item-title">Жильё</h3>
-            <p class="services-item-dexcription">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <p class="services-item-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="services-item services-item-food">
             <h3 class="services-item-title">Еда</h3>
-            <p class="services-item-dexcription">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+            <p class="services-item-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="services-item services-item-souvenir">
             <h3 class="services-item-title">Сувениры</h3>
-            <p class="services-item-dexcription">Не только китайского, но и настоящего местного производства!</p>
+            <p class="services-item-description">Не только китайского, но и настоящего местного производства!</p>
           </li>
         </ul>
       </section>
@@ -103,7 +107,7 @@
         <p class="booking-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
           в
           Седоне</p>
-        <button class="button-seach-hotel button" type="button">Поиск гостиницы в Седоне</button>
+        <button class="button" type="button">Поиск гостиницы в Седоне</button>
       </section>
       <section class="subscription">
         <h2 class="subscription-title main-title">Подпишитесь на рассылку</h2>
@@ -112,7 +116,7 @@
           <label class="visually-hidden" for="subscription-email">Укажите ваш e-mail</label>
           <input class="input subscription-input" type="email" name="e-mail" placeholder="Ваш e-mail"
             id="subscription-email" required>
-          <button class="button subscription-button" type="submit">Подписаться</button>
+          <button class="button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
