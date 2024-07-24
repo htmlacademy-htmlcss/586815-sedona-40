@@ -236,8 +236,9 @@ img {
 }
 
 .navigation-item .button {
-  width: 160px;
+  width: fit-content;
   padding: 8px 34px;
+  font-family: "PT Sans";
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
